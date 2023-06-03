@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title> Holi App </title>
+		<style>
+			* {font-size:50px;}
+		</style>
+
+		<script>
+			let cc = () => {
+				event.preventDefault();
+				let colors = ["red","green","blue","pink","gray"];
+				let r = parseInt(Math.random() * colors.length);
+				document.body.style.backgroundColor = colors[r];
+			}
+
+		</script>
+
+	</head>
+	
+	<body>
+	<center>
+		<h1> HOLI HAI </h1>
+		
+		<form onsubmit = "cc()">	
+			<input type = "submit" value="Mohe Rang Do Lal" />
+		</form>
+		
+	</body>
+
+</html>
